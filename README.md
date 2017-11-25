@@ -6,5 +6,4 @@ Prerequisites
 * An internet connection
 
 To use:  
-* Run db_create.py first to create the .db file
-* Run ino_search.py
+* Run ino_search.py. This will create the sqlite .db file, and it will populate it.
