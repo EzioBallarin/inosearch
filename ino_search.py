@@ -2,15 +2,17 @@ import os.path
 import urllib2 
 from bs4 import BeautifulSoup
 import sqlite3
-import db_create
+from db_create import create_db
 
 def main():
 	conn = sqlite3.connect('ino_locations.db')
 	c = conn.cursor()
+    
+	print ("connected to ino_locations.db")
 
 	base_url = 'http://locations.in-n-out.com/'
 	next = 1
-
+	print("starting search...")
 	while next < 328:
 
 		# Since INO's website has a website for each store number,
@@ -48,5 +50,6 @@ def main():
 
 if __name__ == "__main__":
 	if not os.path.isfile('./ino_locations.db'):
+		print ("ino_locations.db not found, creating...")
 		create_db()
-    #main()
+	main()
