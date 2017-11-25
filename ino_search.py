@@ -11,9 +11,9 @@ def main():
 	print ("connected to ino_locations.db")
 
 	base_url = 'http://locations.in-n-out.com/'
-	next = 1
+	next = 1 
 	print("starting search...")
-	while next < 328:
+	while next < 329:
 
 		# Since INO's website has a website for each store number,
 		# and each store number increments by one, 
