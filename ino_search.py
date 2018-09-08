@@ -13,7 +13,7 @@ def main():
 	base_url = 'http://locations.in-n-out.com/'
 	next = 1 
 	print("starting search...")
-	while next < 329:
+	while next < 334:
 
 		# Since INO's website has a website for each store number,
 		# and each store number increments by one, 
